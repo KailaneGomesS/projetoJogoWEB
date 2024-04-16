@@ -13,8 +13,9 @@ body {
 
 p,
 li {
+
     color: #444;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 /*barra de navegação*/
@@ -32,19 +33,42 @@ header .navbar {
 
 }
 
+#lobo {
+    width: 200px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 250px;
+}
+
+#titulo {
+
+    margin-bottom: 150px;
+}
+
+
+
 .navbar-brand {
     padding: 0;
-    color: #fff;
+    color: #ffffff;
 }
 
 .navbar-brand:hover {
-    color: #FFF;
+    color: #e30000;
 }
 
 #navbar-links a {
-    color: #fff;
+    color: #ffffff;
+}
+
+.nav-item :active {
+    color: black
 }
 
 .navbar-expand-lg .navbar-nar.nav-link {
     padding: 1rem .8rem;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
 }
