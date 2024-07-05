@@ -1,0 +1,149 @@
+/*gerais*/
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top:100px;
+    background: #1F1C1C;
+}
+
+.row {
+   margin:0px
+}
+
+.container-fluid {
+    padding: 70px 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+div{
+  color: #fff;
+}
+
+
+#text{
+  text-align:center;
+}
+
+h1{
+  margin-bottom: 40px;
+  color:#fff;
+}
+
+h5,h3{
+  color: #fff;
+ 
+}
+
+
+p,li {
+    margin-inline-start: 15px;
+    margin-left: 15px
+    color: #ffffff;
+    font-size: 20px;
+
+}
+
+
+header .navbar {
+    background-color: #044F4B;
+    width: 100%;
+    height: 100px;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 200px;
+
+}
+
+.imagem-container,
+.texto-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.row {
+    margin: 0;
+}
+
+.texto-container p {
+    margin: 0;
+}
+
+#personagens {
+    width: 200px;
+   margin-bottom: 50px;
+}
+
+
+#titulo {
+    margin-top: 0; 
+    margin-left: 15px; 
+    display: inline-block;
+    vertical-align: middle; 
+}
+#tituloCol1{
+  text-align: right; 
+}
+#tituloCol2{
+  text-align: left;
+}
+#tituloHist{
+   text-align: center;
+}
+
+.line{
+   border-bottom: 2px solid #929090;
+}
+
+.creditos {
+    display: flex;
+}
+
+.nome {
+    margin-right: 15px; /* Espaço entre o nome e a função */
+}
+
+.funcao {
+    margin-left: 15px; /* Espaço entre a função e o nome */
+}
+
+
+
+.row {
+    align-items: center; 
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #ffffff;
+}
+
+.navbar-brand:hover {
+    color: #e30000;
+}
+
+#navbar-links a {
+    color: #ffffff;
+}
+
+.nav-item :active {
+    color: black
+}
+
+.navbar-expand-lg .navbar-nar.nav-link {
+    padding: 1rem .8rem;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+}
