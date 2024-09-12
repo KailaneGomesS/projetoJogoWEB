@@ -1,3 +1,6 @@
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+
 var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
@@ -13,8 +16,36 @@ var creditosRouter = require("./routes/creditos");
 var historiaRouter = require("./routes/historia");
 var mapaRouter = require("./routes/mapa");
 var personagensRouter = require("./routes/personagens");
+const app = express();
 
-var app = express();
+//Carregar variáveis de ambiente do arquivo .env
+dotenv.config();
+
+app.use(express.json());
+
+// Conectar ao MongoDB
+mongoose
+  .connect(process.env.MONGO_URI)
+  .then(() => {
+    console.log("Conectado ao MongoDB com sucesso! 🎉"); // Mensagem de sucesso
+  })
+  .catch((err) => {
+    console.error("Erro ao conectar ao MongoDB:", err); // Caso dê erro
+  });
+
+// Importar as rotas
+const postRoutes = require("./routes/postRoutes");
+const getRoutes = require("./routes/getRoutes");
+
+// Usar as rotas
+app.use("/api", postRoutes);
+app.use("/api", getRoutes);
+app.use("/personagens", personagensRouter); // Para rotas específicas de personagens
+
+const PORT = process.env.PORT || 3006;
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

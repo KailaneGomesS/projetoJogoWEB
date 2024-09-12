@@ -1,0 +1,14 @@
+<!-- views/addPersonagem.ejs -->
+<%- include('./partials/header') %>
+<main>
+    <div class="container">
+        <h1 class="text-center mb-4">Adicionar Novo Personagem</h1>
+        <form action="/personagens/add" method="post">
+          <input type="text" name="nome" placeholder="Nome" required>
+          <textarea name="descricao" placeholder="Descrição" required></textarea>
+          <button type="submit">Adicionar Personagem</button>
+        </form>
+
+    </div>
+</main>
+<%- include('./partials/footer') %>
