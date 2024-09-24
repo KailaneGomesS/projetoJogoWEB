@@ -9,4 +9,5 @@ O site é destinado a um jogo em desenvolvimento. Nele será colocado em sua pá
 <sub>Jogo que é pra rodar na web, mas eu não tenho o jogo</sub>
 
 
+<sub>Obs.: o arquivo .zip é para facilitar o transporte de informação</sub>
 
